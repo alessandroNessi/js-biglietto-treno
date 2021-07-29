@@ -14,13 +14,47 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="container p-5">
-        <div class="row">
-            <div class="col text-center">
-                <p id="result"></p>
+    <header>
+        <div class="container-fluid position-relative">
+            <div class="row">
+                <div class="col-fluid">
+                    <h1 class=" pt-5 text-center">Vaporwave Travels</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-fluid">
+                    <h2 class=" p-5 text-center subtitle">
+                        Waiting Sunset
+                    </h2>
+                </div>
             </div>
         </div>
-    </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="row pt-5">
+                <div class="col col-md-3">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control rounded-pill" id="userAge">
+                        <label for="floatingInput">Passenger's age:</label>
+                      </div>
+                      <div class="form-floating mb-3">
+                        <input type="text" class="form-control rounded-pill" id="travelDistance">
+                        <label for="floatingPassword">Distance to travel:</label>
+                      </div>
+                      <button class="button__check rounded-pill mb-3">Check-price</button>
+                      <div class="input-group mb-3 ">
+                        <span class="input-group-text">€</span>
+                        <input type="text" class="form-control" id="result" aria-label="Amount (to the nearest dollar)">
+                        <span id="result__module" class="input-group-text">.00</span>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
     <!-- bootstap script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <!-- ////bootstrap script -->
