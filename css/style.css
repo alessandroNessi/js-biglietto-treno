@@ -72,7 +72,7 @@ main .container{
     opacity: 0;
     transition: opacity 1s;
 }
-/* #thomas, #thomas_text{
+#thomas, #thomas_text{
     width: 200px;
     opacity: 0;
     animation-timing-function: linear;
@@ -86,7 +86,7 @@ main .container{
         transform: scale(1);
     }
     50%{
-        opacity: 1;
+        opacity: 0.15;
         top: 50vh;
         left: 50vw;
         transform: scale(3);
@@ -98,7 +98,7 @@ main .container{
         transform: scale(6);
     }
   }
-  @keyframes movingText {
+  /* @keyframes movingText {
     0% {
         opacity: 0;
         top: 50vh;
