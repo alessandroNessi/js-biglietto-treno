@@ -15,8 +15,9 @@ function calculatePrice(){
                 tiketPrice *= 0.6;
             }
             document.getElementById("result").value = parseInt(tiketPrice); 
-            // alert(parseInt((tiketPrice-parseInt(tiketPrice))*100));
             document.getElementById("result__module").innerHTML = "." + parseInt((tiketPrice-parseInt(tiketPrice))*100);
+            document.getElementById("resultContainer").style.opacity= "1";
+            document.getElementById("thomas").style.animationName = "movingThomas";
         }
     }
 }

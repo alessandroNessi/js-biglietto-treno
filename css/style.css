@@ -58,6 +58,7 @@ body{
     background-image: url("https://pbs.twimg.com/media/D5_jlQxWsAMlxWy?format=jpg&name=large");
     background-size: cover;
     height: 500px;
+    overflow: hidden;
 }
 main .container{
     background-color: rgba(0, 0, 255, 0.2);
@@ -67,3 +68,34 @@ main .container{
     border-color: rosybrown;
     border-style:outset;
 }
+#resultContainer{
+    opacity: 0;
+    transition: opacity 1s;
+}
+#thomas{
+    width: 200px;
+    opacity: 0;
+
+    animation-timing-function: linear;
+    animation-duration: 5s;
+}
+@keyframes movingThomas {
+    0% {
+        opacity: 0;
+        top: 50vh;
+        left: 0;
+        transform: scale(1);
+    }
+    50%{
+        opacity: 1;
+        top: 50vh;
+        left: 50vw;
+        transform: scale(3);
+    }
+    100% {
+        opacity: 0;
+        top:50vh;
+        left: 100vw;
+        transform: scale(6);
+    }
+  }
