@@ -4,7 +4,7 @@ function calculatePrice(){
         alert("the user age you insered is not correct");
     } else{
         var travelDistance = parseFloat(document.getElementById("travelDistance").value);
-        if(travelDistance < 0 || Number.isNaN(travelDistance)==true)
+        if((travelDistance < 0 && travelDistance > 99000) || Number.isNaN(travelDistance)==true)
         {
             alert("the distance you insered is not correct");
         }else{
@@ -18,7 +18,9 @@ function calculatePrice(){
             document.getElementById("result__module").innerHTML = "." + parseInt((tiketPrice-parseInt(tiketPrice))*100);
             document.getElementById("resultContainer").style.opacity= "1";
             document.getElementById("thomas").style.animationName = "movingThomas";
-            // document.getElementById("thomas_text").style.animationName = "movingText";
+            document.getElementById("phomas").style.animationName = "movingPhomas";
+            document.getElementById("rhomas").style.animationName = "movingRhomas";
+            document.getElementById("angromas").style.animationName = "movingAngromas";
         }
     }
 }
