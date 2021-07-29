@@ -17,7 +17,8 @@ function calculatePrice(){
             document.getElementById("result").value = parseInt(tiketPrice); 
             document.getElementById("result__module").innerHTML = "." + parseInt((tiketPrice-parseInt(tiketPrice))*100);
             document.getElementById("resultContainer").style.opacity= "1";
-            document.getElementById("thomas").style.animationName = "movingThomas";
+            // document.getElementById("thomas").style.animationName = "movingThomas";
+            // document.getElementById("thomas_text").style.animationName = "movingText";
         }
     }
 }

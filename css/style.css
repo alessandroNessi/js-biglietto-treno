@@ -72,12 +72,11 @@ main .container{
     opacity: 0;
     transition: opacity 1s;
 }
-#thomas{
+/* #thomas, #thomas_text{
     width: 200px;
     opacity: 0;
-
     animation-timing-function: linear;
-    animation-duration: 5s;
+    animation-duration: 6s;
 }
 @keyframes movingThomas {
     0% {
@@ -99,3 +98,23 @@ main .container{
         transform: scale(6);
     }
   }
+  @keyframes movingText {
+    0% {
+        opacity: 0;
+        top: 50vh;
+        left: 50vw;
+        transform: scale(1);
+    }
+    50%{
+        opacity: 1;
+        top: 50vh;
+        left: 50vw;
+        transform: scale(3);
+    }
+    100% {
+        opacity: 0;
+        top: 50vh;
+        left: 50vw;
+        transform: scale(6);
+    }
+  } */
